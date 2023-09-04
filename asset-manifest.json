@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bingo-app/static/css/main.49afa768.css",
+    "main.js": "/bingo-app/static/js/main.f019fdf4.js",
+    "static/js/787.179b936f.chunk.js": "/bingo-app/static/js/787.179b936f.chunk.js",
+    "static/media/trebol.png": "/bingo-app/static/media/trebol.81cc1c7615cb175c3336.png",
+    "index.html": "/bingo-app/index.html",
+    "main.49afa768.css.map": "/bingo-app/static/css/main.49afa768.css.map",
+    "main.f019fdf4.js.map": "/bingo-app/static/js/main.f019fdf4.js.map",
+    "787.179b936f.chunk.js.map": "/bingo-app/static/js/787.179b936f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49afa768.css",
+    "static/js/main.f019fdf4.js"
+  ]
+}
