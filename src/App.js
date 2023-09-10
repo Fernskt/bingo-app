@@ -1,25 +1,47 @@
-import logo from '../src/assets/trebol.png';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Importa Navigate para redirección
+
+import Welcomepage from './pages/Welcomepage';
+import MainPage from './pages/MainPage';
 
 function App() {
+  const [showWelcome, setShowWelcome] = useState(true);
+
+  useEffect(() => {
+    // Oculta la página de bienvenida después de 4 segundos
+    const timer = setTimeout(() => {
+      setShowWelcome(false);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>En desarrollo...</h2>
-        <p>
-        ¡Muy pronto estarás a un paso más cerca de tu suerte! 😉✨
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hecho con React!
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/main" element={<MainPage />} />
+        <Route
+          path="/welcome"
+          element={
+            showWelcome ? (
+              <Welcomepage />
+            ) : (
+              <Navigate to="/main" replace />
+            )
+          }
+        />
+        <Route
+          path="/bingo-app"
+          element={
+            showWelcome ? (
+              <Navigate to="/welcome" replace />
+            ) : (
+              <Navigate to="/main" replace />
+            )
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 
