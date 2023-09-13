@@ -8,10 +8,10 @@ function App() {
   const [showWelcome, setShowWelcome] = useState(true);
 
   useEffect(() => {
-    // Oculta la página de bienvenida después de 4 segundos
+    // Oculta la página de bienvenida después de 5 segundos
     const timer = setTimeout(() => {
       setShowWelcome(false);
-    }, 4000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);

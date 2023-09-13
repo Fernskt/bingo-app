@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from "../assets/trebol.png"
 import '../App.css';
+import '../efectos.css';
+
 
 export default function Welcomepage() {
   return (
@@ -8,7 +10,7 @@ export default function Welcomepage() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2>Bienvenido/a</h2>
-        <p>Cargando...</p>
+        <div className='loader'></div>
         <p>
         ¡Juega al bingo en cualquier momento, en cualquier lugar! 😉✨
         </p>
