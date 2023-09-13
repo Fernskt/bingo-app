@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bingo-app/static/css/main.c7733b42.css",
-    "main.js": "/bingo-app/static/js/main.b636f68f.js",
+    "main.css": "/bingo-app/static/css/main.3ebe69ce.css",
+    "main.js": "/bingo-app/static/js/main.c35f0a52.js",
     "static/js/787.179b936f.chunk.js": "/bingo-app/static/js/787.179b936f.chunk.js",
     "static/media/trebol.png": "/bingo-app/static/media/trebol.81cc1c7615cb175c3336.png",
     "index.html": "/bingo-app/index.html",
-    "main.c7733b42.css.map": "/bingo-app/static/css/main.c7733b42.css.map",
-    "main.b636f68f.js.map": "/bingo-app/static/js/main.b636f68f.js.map",
+    "main.3ebe69ce.css.map": "/bingo-app/static/css/main.3ebe69ce.css.map",
+    "main.c35f0a52.js.map": "/bingo-app/static/js/main.c35f0a52.js.map",
     "787.179b936f.chunk.js.map": "/bingo-app/static/js/787.179b936f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7733b42.css",
-    "static/js/main.b636f68f.js"
+    "static/css/main.3ebe69ce.css",
+    "static/js/main.c35f0a52.js"
   ]
 }
